@@ -1,0 +1,184 @@
+
+body{
+    font-family: Roboto;
+    
+}
+p{
+
+  margin-left: 10px;
+
+  color: #504D4D;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+h1 {
+    color: #504D4D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 4%;
+  }
+.name{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 300px;
+    height: 39px;
+    padding-left: 5%;
+    
+    
+    border-radius: 25px;
+    background: #D9D9D9;
+    border-width: 0;
+    
+    color: #504D4D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+.email{
+  margin-top: 5%;
+  margin-left: 5%;
+
+  padding-left: 5%;
+  width: 300px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #D9D9D9;
+  border-width: 0;
+  color: #504D4D;
+}
+
+.desc {
+
+  padding-left: 5%;
+  padding-top: 5%;
+  width: 350px;
+  height: 163px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #D9D9D9;
+  border-width: 0;
+  color: #504D4D;
+}
+.btn {
+  top: 70%;
+  left:70%;
+  width: 102px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #D9D9D9;
+  border-width: 0;
+  color: #504D4D;
+ 
+  color:#504D4D;
+  text-align: center;
+  text-justify: auto;
+}
+input::placeholder {
+  color: red;
+  font-size: 15px;
+  color: var(--letra, #504D4D);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+   
+
+}
+
+textarea::placeholder {
+  color: red;
+  font-size: 15px;
+  color: var(--letra, #504D4D);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+   
+
+}
+
+.caixa_1{
+  display:flex;
+}
+.caixa_2 {
+  display:flex;
+}
+.caixa_3 {
+  display:flex;
+}
+.caixa_4 {
+  display:flex;
+}
+ 
+/*
+label {
+  display: inline-block;
+  background: #D9D9D9;
+  border-radius: 25px;
+  font-size: 15px;
+  color:#504D4D;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 190px;
+  height: 55px;
+  margin-top: 10px;
+  margin-left: 180px;
+  text-align: center;
+  padding-top: 10px;
+}*/
+
+/* Define um estilo padrão para as caixas */
+input[type="radio"]{
+  display: none;
+}
+.caixa {
+  display: inline-block;
+  width: 180px;
+  height: 65px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-left: 5px;
+  background-color: #D9D9D9;
+  color: #504D4D;
+
+  text-align: center;
+  color: #504D4D;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  text-align: center;
+  padding-top: 8%;
+
+}
+
+/* Define um estilo diferente para as caixas quando elas são clicadas */
+.caixa:active {
+  transform: translateY(-10px); /* move a caixa para cima em 10 pixels */
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2); /* cria uma sombra abaixo da caixa */
+}
+
+input[type="radio"]:checked + .caixa {
+  background-color: #f00;
+  color: #fff;
+}
