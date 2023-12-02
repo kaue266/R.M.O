@@ -1,41 +1,32 @@
 *{
-  max-width: 1440px;
-  max-height: 500px;
-  font-family: “Times New Roman”, “Georgia”, serif;
-}
+  max-width: 1360px;
 
-body{
-    margin: 0px;
-    margin-top: 0px;
-    margin-left: 10%;
-}
-body{
-    font-family: Roboto;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body {
+
+  background-color: white;
 }
 img{
-  position: fixed;
-  width: 55px;
-  height: 55px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
   top: 0;
-  margin-left: 35%;
-  margin-top: 0;
+  left: 150px;
+  
   z-index: 3;
 }
 .fundo {
-  position: fixed;
+  position: absolute;
   background: black;
   width: 100%;
   height: 53px;
-  top: 0;
-  left: 0;
-  margin-left: 0;
-  margin-top: 0%;
   z-index: 2;
 }
 p{
 
-  margin-left: 0%;
 
   color: #504D4D;
   font-size: 15px;
@@ -45,24 +36,24 @@ p{
 
 }
 h1 {
+    position: absolute;
     color: #504D4D;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 
-    text-align: left;
-    margin-top: 15%;
-    margin-left: 2%;
-  
+    text-align: center;
    
+    left: 15%;
+    margin-top: 60px
   }
 .name{
-  justify-items: center;
+  position: absolute;
     text-align: left;
-    margin-top: 5%;
-    margin-left: 0%;
-    width: 300px;
+    top: 15%;
+    left: 10%;
+    width: 290px;
     height: 39px;
     padding-left: 5%;
     
@@ -79,45 +70,18 @@ h1 {
 
   }
 .email{
-  margin-top: 5%;
-  margin-left: 0%;
-
-  padding-left: 5%;
-  width: 300px;
+  position: absolute;
+  text-align: left;
+  top: 25%;
+  padding-left: 35px;
+  left: 10%;
+  width: 290px;
   height: 39px;
   flex-shrink: 0;
   border-radius: 25px;
   background: #D9D9D9;
   border-width: 0;
   color: #504D4D;
-}
-
-.desc {
-  margin-left: 0%;
-  padding-left: 5%;
-  padding-top: 5%;
-  width: 330px;
-  height: 153px;
-  flex-shrink: 0;
-  border-radius: 25px;
-  background: #D9D9D9;
-  border-width: 0;
-  color: #504D4D;
-}
-.btn {
-  margin-top: 2%;
-  margin-left:66%;
-  width: 102px;
-  height: 37px;
-  flex-shrink: 0;
-  border-radius: 25px;
-  background: #D9D9D9;
-  border-width: 0;
-  color: #504D4D;
- 
-  color:#504D4D;
-  text-align: center;
-  text-justify: auto;
 }
 input::placeholder {
   color: red;
@@ -146,53 +110,36 @@ textarea::placeholder {
 }
 
 .caixa_1{
+  position:absolute;
   display:flex;
-  margin-left: 0%;
+  justify-content:center;
+  text-align: left;
+  top: 36%;
+  left: 10%;
 }
 .caixa_2 {
+  position:absolute;
   display:flex;
-  margin-left: 0%;
+
+  justify-content:center;
+  text-align: left;
+  top: 48%;
+  left: 10%;
 }
 .caixa_3 {
+  position:absolute;
   display:flex;
-  margin-left: 0%;
-}
-.caixa_4 {
-  display:flex;
-  margin-left: 0%;
-}
- 
-/*
-label {
-  display: inline-block;
-  background: #D9D9D9;
-  border-radius: 25px;
-  font-size: 15px;
-  color:#504D4D;
-  font-family: Roboto;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  width: 190px;
-  height: 55px;
-  margin-top: 10px;
-  margin-left: 180px;
-  text-align: center;
-  padding-top: 10px;
-}*/
-
-/* Define um estilo padrão para as caixas */
-input[type="radio"]{
-  display: none;
+  justify-content:center;
+  text-align: left;
+  top: 60%;
+  left: 10%;
 }
 .caixa {
-  display: inline-block;
-  width: 180px;
-  height: 65px;
+  width: 150px;
+  height: 70px;
   border: none;
   border-radius: 25px;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-right: 5%;
   background-color: #D9D9D9;
   color: #504D4D;
@@ -206,6 +153,7 @@ input[type="radio"]{
 
   text-align: center;
   padding-top: 4%;
+  padding-left: 0px;
 
 }
 
@@ -217,5 +165,36 @@ input[type="radio"]{
 
 input[type="radio"]:checked + .caixa {
   background-color: #f00;
-  color: #fff;
+  color: #000f;
+}
+.desc {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 15px;
+  text-align: left;
+  top: 75%;
+  left: 10%;
+  width: 290px;
+  height: 158px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #D9D9D9;
+  border-width: 0;
+  color: #504D4D;
+}
+.btn {
+  position: absolute;
+  top: 100%;
+  left:56%;
+  width: 102px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #D9D9D9;
+  border-width: 0;
+  color: #504D4D;
+ 
+  color:#504D4D;
+  text-align: center;
+  text-justify: auto;
 }
